@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     hamburger.addEventListener('click', function() {
         navLinks.classList.toggle('active');
-        hamburger.classList.toggle('active');
+        this.classList.toggle('active');
     });
 
     // Fechar menu ao clicar em um link
@@ -16,7 +16,9 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // ===== FORMULÁRIO DE REPARO =====
+  
+});
+      // ===== FORMULÁRIO DE REPARO =====
     const repairForm = document.getElementById('repairForm');
     
     if (repairForm) {
@@ -85,4 +87,3 @@ document.addEventListener('DOMContentLoaded', function() {
             setTimeout(() => window.open('https://wa.me/5581982734143', '_blank'), 1500);
         });
     });
-});
